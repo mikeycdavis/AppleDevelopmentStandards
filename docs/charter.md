@@ -19,7 +19,7 @@ dependencies, build/release provenance, and store readiness.
 - **Apple Developer / App Store Connect access:** team roles, least privilege, App Store Connect API
   keys (`.p8`) governance, account-holder and agent separation, two-factor/identity attestations.
 - **Signing:** certificates, provisioning profiles, automatic vs manual signing, key custody,
-  rotation/expiry, notarization (macOS), distribution vs development identities.
+  rotation/expiry, notarization (macOS; deferred from v1, packet AP2), distribution vs development identities.
 - **No signing material or credentials in source or evidence:** `.p8`, `.p12`, `.cer` private keys,
   provisioning profiles with embedded certs, API issuer/key IDs paired with keys, `match`-style
   repositories.
@@ -96,7 +96,7 @@ Layout per conventions §2. Proposed ~30 standards:
 | 05 | App Store Connect API key governance (`.p8`) | Access |
 | 06 | Certificates, identifiers, entitlements, provisioning profiles, signing: ownership, custody, expiry, rotation, revocation | Signing |
 | 07 | No signing material or credentials in source or evidence | Signing |
-| 08 | Notarization and Gatekeeper (macOS distribution) | Signing |
+| 08 | Notarization and Gatekeeper (macOS distribution) — DEFERRED from v1 (packet AP2) | Signing |
 | 09 | Entitlements and capabilities least privilege | Platform security |
 | 10 | Keychain, Data Protection, and local storage | Platform security |
 | 11 | App Transport Security and reviewed exceptions | Platform security |
@@ -168,7 +168,7 @@ finding.
 
 Note on the fixture-only choice: the earlier survey statement that no real Apple workload exists under F:\Repos was incomplete; tracked Apple-relevant projects do exist there. Fixture-only v1 validation is therefore an owner decision, not a verified absence of candidates. "Qualifying" is undefined and any adopter trial must follow the read-only, commit-pinned-copy rule (decision-packet item T12, not this charter's threat T12) and cannot be claimed from fixtures.
 
-Applied (Mike, on or before 2026-11-19 19:36 PST (2026-11-20T03:36Z)): v1 validated by adversarial fixtures only (owner decision; see note below); pins the SoftwareTestingStandards core release-evidence schema and extends it with a platform profile.
+Applied (Mike, on or before 2026-11-19 19:36 PST (2026-11-20T03:36Z)): v1 validated by adversarial fixtures only (owner decision; see note above); pins the SoftwareTestingStandards core release-evidence schema and extends it with a platform profile.
 
 
 1. ~~Real Apple project to dogfood against?~~ Settled by the applied decision above: fixture-only validation.
