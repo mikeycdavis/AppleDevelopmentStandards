@@ -1,8 +1,8 @@
-<!-- Charter revision 3; authoritative evidence: F:\GitHub Evidence$r\evidence-1\ -->
+<!-- Charter revision 3; authoritative evidence: F:\GitHub Evidence\AppleDevelopmentStandards\evidence-1\ -->
 # Charter packet 03 — AppleDevelopmentStandards
 
 Status: DRAFT, read-only. Backlog IDs are draft labels, not issue numbers. See
-[00-shared-conventions.md](00-shared-conventions.md).
+`00-shared-conventions.md` (kept in the evidence folder above, not in this repository).
 
 ## 1. Purpose
 
@@ -65,6 +65,8 @@ dependencies, build/release provenance, and store readiness.
   surface in v1.
 
 ## 4. Authoritative first-party sources (all UNVERIFIED until opened)
+
+> Status note: this section is the pre-verification charter text. The source ledger in the evidence folder (hashed in `docs/evidence-index.md`) records which sources were later opened (tool-extracted, not human-reviewed) and governs; "unverified" below is superseded per source by the ledger.
 
 | Source | Role |
 | --- | --- |
@@ -167,8 +169,7 @@ finding.
 Applied (Mike, on or before 2026-11-19 19:36 PST (2026-11-20T03:36Z)): v1 validated by adversarial fixtures only (no qualifying real workload under F:\Repos); pins the SoftwareTestingStandards core release-evidence schema and extends it with a platform profile.
 
 
-1. Is there any real Apple project to dogfood against? If none, validation stays fixture-only and
-   the charter must say so (as UIUX did).
+1. ~~Real Apple project to dogfood against?~~ Settled by the applied decision above: fixture-only validation.
 2. macOS notarization and Mac App Store in v1, or iOS/iPadOS only? Recommendation: iOS/iPadOS +
    shared Swift packages first.
 3. How are Developer Program agreements/tax/banking handled? Recommendation: attestation only.
