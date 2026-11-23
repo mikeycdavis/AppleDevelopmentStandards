@@ -1,0 +1,7 @@
+{
+  "coreVersion": "0.1.0",
+  "sourceRepository": "mikeycdavis/SoftwareTestingStandards",
+  "sourceCommit": "67f0783c1c1d88ae7f9ad7f3992f6d3fad965d0c",
+  "schemaPath": "schemas/release-evidence.core.0.1.0.schema.json",
+  "schemaSha256LfNormalised": "a8be81341477d21507812a59563514e474b1fe89e2a9e0fef7c9cf224594130a"
+}
